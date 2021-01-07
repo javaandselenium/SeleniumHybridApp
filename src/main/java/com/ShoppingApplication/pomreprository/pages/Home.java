@@ -4,15 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+
 /**
  * 
  * @author QSP
  *
  */
-public class Home {
+public class Home extends BasePOMpage {
 	/**
 	 * Elements of Homepage
 	 */
+	public WebDriver driver;
+	
 	@FindBy(id="search_query_top")
 	private WebElement serachTb;
 	
@@ -24,6 +28,8 @@ public class Home {
 	
 	@FindBy(xpath="(//a[text()='Evening Dresses'])[2]")
 	private WebElement eveningdress;
+
+	
 	
 	
 
@@ -44,12 +50,15 @@ public class Home {
 	}
 	
 	public Home(WebDriver driver){
-		PageFactory.initElements(driver,this);
+//  this.driver=driver;
+//  PageFactory.initElements(driver,this);
+		super(driver);
 	}
 	
-	public void searching(String product) {
-		serachTb.sendKeys(product);
+	public Product searching(String productes) {
+		serachTb.sendKeys(productes);
 		serachBtn.click();
+		return new Product(driver);
 	}
 	
 	public void eveningProduct() {

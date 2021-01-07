@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.ShoppingApplication.scripts.AddingProductCart"/>
+      <class name="com.ShoppingApplication.scripts.Addingcart1"/>
       <class name="com.ShoppingApplication.scripts.ProductDelivery"/>
     </classes>
   </test> <!-- Test -->

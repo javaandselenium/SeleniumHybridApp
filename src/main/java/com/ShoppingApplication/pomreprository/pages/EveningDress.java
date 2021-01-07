@@ -1,11 +1,14 @@
 package com.ShoppingApplication.pomreprository.pages;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class EveningDress {
+
+
+public class EveningDress extends BasePOMpage{
 	@FindBy(xpath="(//div[@class='checker'])[3]")
    private WebElement sizecb;
 	
@@ -28,7 +31,7 @@ public class EveningDress {
 	}
 	
 	public EveningDress(WebDriver driver) {
-		PageFactory.initElements(driver,this);
+		super(driver);
 	}
 	
 	public void deliveryBtn() {

@@ -1,15 +1,18 @@
 package com.ShoppingApplication.pomreprository.pages;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+
 /**
  * 
  * @author QSP
  *
  */
-public class AddToCart {
+public class AddToCart extends BasePOMpage{
 	/**
 	 * Elements of Addtocart page
 	 */
@@ -49,7 +52,7 @@ private WebElement addTocart;
 private WebElement proceedTocheckout;
 
 public AddToCart(WebDriver driver){
-	PageFactory.initElements(driver,this);
+	super(driver);
 }
 
 public void plusBtn() {

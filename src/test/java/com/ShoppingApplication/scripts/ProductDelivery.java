@@ -11,10 +11,12 @@ import com.ShoppingApplication.genericlib.Utilites;
 import com.ShoppingApplication.pomreprository.pages.EveningDress;
 import com.ShoppingApplication.pomreprository.pages.Home;
 import com.ShoppingApplication.pomreprository.pages.Login;
+import com.aventstack.extentreports.ExtentTest;
 
-public class ProductDelivery extends BaseClass {
+public class ProductDelivery  extends BaseClass{
 	@Test
 	public void Delivery() throws FileNotFoundException, IOException, InterruptedException {
+		ExtentTest test = reports.createTest("ProductDelivery");
 		Login l=new Login(driver);
 		l.loginCredtails(Propertylib.getpropertydata("username"),Propertylib.getpropertydata("password"));
 		Home h=new Home(driver);

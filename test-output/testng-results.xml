@@ -1,53 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-01-05T10:16:41Z" name="Suite" finished-at="2021-01-05T10:18:09Z" duration-ms="88030">
+  <suite started-at="2021-01-07T09:27:38Z" name="Default suite" finished-at="2021-01-07T09:28:09Z" duration-ms="31179">
     <groups>
     </groups>
-    <test started-at="2021-01-05T10:16:41Z" name="Test" finished-at="2021-01-05T10:18:09Z" duration-ms="88030">
+    <test started-at="2021-01-07T09:27:38Z" name="Default test" finished-at="2021-01-07T09:28:09Z" duration-ms="31179">
       <class name="com.ShoppingApplication.scripts.AddingProductCart">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@2474f125]" started-at="2021-01-05T10:16:41Z" name="openapp" finished-at="2021-01-05T10:17:01Z" duration-ms="19278" status="PASS">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@21b2e768]" started-at="2021-01-07T09:27:38Z" name="configBS" finished-at="2021-01-07T09:27:38Z" duration-ms="371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="openapp()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@21b2e768]" started-at="2021-01-07T09:27:38Z" name="openapp" finished-at="2021-01-07T09:27:51Z" duration-ms="12309" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openapp -->
-        <test-method signature="addingProductcart()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@2474f125]" started-at="2021-01-05T10:17:01Z" name="addingProductcart" finished-at="2021-01-05T10:17:31Z" duration-ms="30217" status="PASS">
+        <test-method signature="addingProductcart()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@21b2e768]" started-at="2021-01-07T09:27:51Z" name="addingProductcart" finished-at="2021-01-07T09:28:09Z" duration-ms="18419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addingProductcart -->
-        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@2474f125]" started-at="2021-01-05T10:17:31Z" name="closeapp" finished-at="2021-01-05T10:17:32Z" duration-ms="760" status="PASS">
+        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@21b2e768]" started-at="2021-01-07T09:28:09Z" name="closeapp" finished-at="2021-01-07T09:28:09Z" duration-ms="411" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addingProductcart status=SUCCESS method=AddingProductCart.addingProductcart()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@2474f125] output={null}]]]>
+                <![CDATA[[TestResult name=addingProductcart status=SUCCESS method=AddingProductCart.addingProductcart()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@21b2e768] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeapp -->
+        <test-method is-config="true" signature="confifAS()[pri:0, instance:com.ShoppingApplication.scripts.AddingProductCart@21b2e768]" started-at="2021-01-07T09:28:09Z" name="confifAS" finished-at="2021-01-07T09:28:11Z" duration-ms="1110" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- confifAS -->
       </class> <!-- com.ShoppingApplication.scripts.AddingProductCart -->
-      <class name="com.ShoppingApplication.scripts.ProductDelivery">
-        <test-method is-config="true" signature="openapp()[pri:0, instance:com.ShoppingApplication.scripts.ProductDelivery@7357a011]" started-at="2021-01-05T10:17:32Z" name="openapp" finished-at="2021-01-05T10:17:47Z" duration-ms="15488" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openapp -->
-        <test-method signature="Delivery()[pri:0, instance:com.ShoppingApplication.scripts.ProductDelivery@7357a011]" started-at="2021-01-05T10:17:47Z" name="Delivery" finished-at="2021-01-05T10:18:09Z" duration-ms="21357" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Delivery -->
-        <test-method is-config="true" signature="closeapp(org.testng.ITestResult)[pri:0, instance:com.ShoppingApplication.scripts.ProductDelivery@7357a011]" started-at="2021-01-05T10:18:09Z" name="closeapp" finished-at="2021-01-05T10:18:09Z" duration-ms="819" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=Delivery status=SUCCESS method=ProductDelivery.Delivery()[pri:0, instance:com.ShoppingApplication.scripts.ProductDelivery@7357a011] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeapp -->
-      </class> <!-- com.ShoppingApplication.scripts.ProductDelivery -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
